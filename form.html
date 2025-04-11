@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(17, 110, 147);
+
+        .form-container {
+            background-color: #d1eaa9;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 350px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #2d3436;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #636e72;
+        }
+
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #b2bec3;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #00cec9;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00b894;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Form</h1>
+        <form action="save_data.php" method="post">
+            <label>Student Name:</label>
+            <input type="text" name="studentname"><br>
+            <label>Student ID:</label>
+            <input type="text" name="studentid"><br>
+            <label>Date of Birth:</label>
+            <input type="date" name="dateofbirth"><br>
+            <label>Course ID:</label>
+            <input type="text" name="courseid"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
